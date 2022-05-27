@@ -83,7 +83,7 @@ function buildCharts(sample) {
       x: sampleValues,
       y: yticks,
       text: labels,
-      type: "bar",
+      type: 'bar',
       orienation: 'h'
       
    }];
