@@ -83,7 +83,9 @@ function buildCharts(sample) {
       x: sampleValues,
       y: yticks,
       text: labels,
-      type: "bar"
+      type: "bar",
+      orienation: 'h'
+      
    }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
