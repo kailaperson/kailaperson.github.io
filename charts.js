@@ -57,12 +57,9 @@ function buildMetadata(sample) {
 function buildCharts(sample) {
   // Use d3.json to load the samples.json file 
   d3.json("samples.json").then((data) => {
-    console.log(data);
-
     // Create a variable that holds the samples array. 
     var samples = data.samples;
     // console.log(samples);
-
     // Create a variable that filters the samples for the object with the desired sample number.
     var resultArray = samples.filter(sampleObj => sampleObj.id == sample);
 
@@ -82,7 +79,6 @@ function buildCharts(sample) {
 
     // 3. Create a variable that holds the washing frequency.
     var frequency = parseFloat(metadata.wfreq);
-
 
     // Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order 
